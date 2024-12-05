@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <title>Registration Form </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" type="image/x-icon" href="../public/img/marvel.png">
+    <script src="https://kit.fontawesome.com/81d73e8e4d.js" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+
+    <div class="contain">
+        <form method="post" action="/login" class="form">
+            <div class="name">
+                <i class="fab fa-app-store" style="font-size:16px;"></i> <label for="name">Enter Your Name <label>
+                        <input type="text" autofocus placeholder=" " name="name" required></input>
+            </div>
+            <div class="phone-number">
+                <i class="material-icons" style="font-size:16px;">phone</i> <label for="phoneNumber">Enter Your
+                    PhoneNumber <label>
+                        <input type="tel" placeholder=" " minLength="10" maxlength="10" name="number" pattern="\d+"
+                            required></input>
+            </div>
+            <div class="gender">
+                <label for="gender">Select Your Gender</label>
+                <input type="radio" name="gender-choice"><i class="material-icons"
+                    style="font-size:14px;">person2</i>Male
+                </input>
+                <input type="radio" name="gender-choice"><i class="material-icons"
+                    style="font-size:12px;padding-right: 10px;">face</i>Female</input>
+            </div>
+            <div class="studies">
+                <i class="material-icons" style="font-size:16px;">book</i> <label for="studies"
+                    style="padding-right: 35px;">Select Your Education</label>
+                <select id="edu">
+                    <option value="">Please choose an option</option>
+                    <option>SSLC</option>
+                    <option>HSC</option>
+                    <option>AnyDegree</option>
+                    <option>Uneducated</option>
+                </select>
+            </div>
+            <div class="email">
+                <i class="material-icons" style="font-size:16px;">email</i> <label for="email">Enter Your
+                    Email-ID<label>
+                        <input type="email" placeholder=" " required="required"
+                            oninvalid="this.setCustomValidity(' Please Enter Valid E-mail ID ')"
+                            onvalid="this.setCustomValidity(' ')" name="email"></input>
+            </div>
+            <div class="password">
+                <i class="material-icons" style="font-size:16px;">password</i> <label for="password">Enter Your
+                    Password<label>
+                        <input type="password" placeholder=" " minlength="8" maxlength="8" required=" " name="password"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"></input>
+            </div>
+            <div class="main">
+                <button class="button" style="color:rgb(255, 255, 255);">Sign Up</button>
+            </div>
+        </form>
+
+    </div>
+    <div class="bird-container bird-container-one">
+        <div class="bird bird-one"></div>
+    </div>
+    <div class="bird-container bird-container-two">
+        <div class="bird bird-two"></div>
+    </div>
+    <div class="bird-container bird-container-three">
+        <div class="bird bird-three"></div>
+    </div>
+    <div class="bird-container bird-container-four">
+        <div class="bird bird-four"></div>
+    </div>
+
+    <div class="backimage">
+        <!-- <img src="https://c4.wallpaperflare.com/wallpaper/584/718/481/spider-man-marvel-comics-black-background-superhero-wallpaper-preview.jpg"> -->
+        <div class="tops-left">
+            <h1>Create Account</h1>
+        </div>
+    </div>
+
+
+    </div>
+    <footer style="padding-top:650px;"><!-- Facebook -->
+        <a href="https://www.facebook.com/" target="_blank">
+            <i class="fab fa-facebook-f" style="color:white;padding-right: 20px;padding-left: 25px;"></i>
+        </a>
+
+
+        <a href="https://www.instagram.com/" target="_blank">
+            <i class="fab fa-instagram" style="color:white ;padding-right: 20px;"></i>
+        </a>
+
+
+        <a href="https://www.pinterest.com/javidante/spiderman/" target="_blank">
+            <i class="fab fa-pinterest" style="color:white ;padding-right: 20px;"></i>
+        </a>
+
+        <!-- <a href="http://localhost:3000/login"> -->
+        <!-- <a href="/iron" target="_blank">
+  <i class="fab fa-youtube" style="color:white"></i>
+</a> -->
+    </footer>
+</body>
+
+</html>

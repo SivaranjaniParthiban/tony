@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Login Form </title>
+
+    <link rel='stylesheet' href='/stylesheets/styleNav.css' />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" type="image/x-icon" href="https://wallpaperaccess.com/full/35370.jpg">
+    <script src="https://kit.fontawesome.com/81d73e8e4d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div style="padding-top:500px;width:50px;padding-left:0px">
+        <form action="/SignUp" class="forms">
+            <button class="buttons" style="color:rgb(255, 255, 255);">Sign Up</button>
+        </form>
+    </div>
+    <div class="contain">
+        <form method="post" action="/loginVerify" class="forms">
+            <div class="email" style="padding-left:10px">
+                <i class="material-icons" style="font-size:20px;padding-left:40px">email</i> <label for="email">Enter Your Email-ID<label>
+                    <input type="email"  placeholder=" " required="required"oninvalid="this.setCustomValidity(' Please Enter Valid E-mail ID  ')"onvalid="this.setCustomValidity('')" name="email" ></input>
+            </div>           
+            <div class="password"  style="padding-left:10px">
+                    <i class="material-icons" style="font-size:20px;padding-left:40px">password</i>  <label for="password">Enter Your Password<label>
+                    <input type="password"  placeholder=" " minlength="8" maxlength="8" required=" " name="password" ></input>
+            </div>
+            <div class="main">
+                    <button class="button" style="color:rgb(255, 255, 255);"><i class="far fa-smile-beam" style="padding-right:10px"></i>Login</button>
+            </div>
+        </form>
+          
+    </div>
+   <div class="cancel" style="padding-top:500px;width:50px;padding-right:0px">
+        <form action="/Cancel" class="forms">
+            <button class="buttons" style="color:rgb(255, 255, 255)"><i class="far fa-sad-tear" style="padding-right:10px"></i>Cancel</button>
+        </form>
+    </div>
+           
+                    <div class="bird-container bird-container-one">
+                        <div class="bird bird-one"></div>
+                    </div>
+                    <div class="bird-container bird-container-two">
+                        <div class="bird bird-two"></div>
+                    </div>
+                    <div class="bird-container bird-container-three">
+                        <div class="bird bird-three"></div>
+                    </div>
+                    <div class="bird-container bird-container-four">
+                        <div class="bird bird-four"></div>
+                    </div>
+                 
+                    <div class="backimage">
+                        <div class="tops-left"><h1>Welcome Yo!!</h1></div>
+                </div>
+                   
+</div>
+<footer  style="padding-top:650px;">
+    <a href="https://www.facebook.com/" target="_blank">
+<i class="fab fa-facebook-f" style="color:white;padding-right: 20px;padding-left: 25px;"></i>
+</a>
+
+
+  <a href="https://www.instagram.com/" target="_blank">
+<i class="fab fa-instagram"  style="color:white ;padding-right: 20px;"></i>
+
+
+
+  <a href="https://www.pinterest.com/javidante/spiderman/" target="_blank">
+<i class="fab fa-pinterest"  style="color:white ;padding-right: 20px;"></i>
+
+
+
+  <a href="https://www.youtube.com/" target="_blank">
+<i class="fab fa-youtube"  style="color:white"></i>
+
+</footer>
+</body>
+</html>
